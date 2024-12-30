@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="15dp"
+        android:hint="Street Fashion"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:paddingRight="17dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:background="@drawable/searchbg" />
+
+    <LinearLayout
+        android:id="@+id/ic_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/backbutton" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalteks"
+        android:layout_width="486dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/poppins"
+        android:text="13,539 products found in                 catergory"
+        android:textColor="@color/black"
+        android:textSize="40px"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/blueTeks"
+        android:layout_width="101dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Clothes"
+        android:textColor="@color/Blue"
+        android:textSize="40px"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="190dp" />
+
+
+
+    <HorizontalScrollView
+        android:id="@+id/kanankiri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/filterframenew" />
+
+    </HorizontalScrollView>
+
+
+    <!-- ScrollView wrapping the products -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height= "match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/kanankiri">
+
+        <LinearLayout
+            android:id="@+id/products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+
+            <ImageView
+                android:id="@+id/product1"
+                android:layout_width="163dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="19dp"
+                android:background="@drawable/gothicbelt" />
+
+
+            <ImageView
+                android:id="@+id/p2"
+                android:layout_width="163dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="-200dp"
+                android:background="@drawable/corteizjacket" />
+
+            <ImageView
+                android:id="@+id/p3"
+                android:layout_width="163dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/corteiz1" />
+
+            <ImageView
+                android:id="@+id/p4"
+                android:layout_width="163dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="-195dp"
+                android:background="@drawable/nike" />
+
+            <ImageView
+                android:id="@+id/p5"
+                android:layout_width="163dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/corteiz1" />
+
+            <ImageView
+                android:id="@+id/p6"
+                android:layout_width="163dp"
+                android:layout_height="194dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="-195dp"
+                android:background="@drawable/nike" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/icon_home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ichomenew" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icsearch" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/FavoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/icon_favorite"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icfavorite" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/WalletButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/icon_wallet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icwallet" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:padding="5dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/icon_profile"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icprofile" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    </RelativeLayout>

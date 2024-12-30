@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Eshop</string>
+    <string name="Login">Login</string>>
+    <string name="Sign">Sign in  to yout account</string>>
+    <string name="ForgotPass">Forgot Password?</string>>
+    <string name="Asking">Don’t have an account?</string>>
+    <string name="Regist">Register Here</string>>
+    <string name="Delivery">Delivery:</string>>
+    <string name="Address">15244,Mutiara Gading Riviera</string>>
+    <string name="PopularCategories">Popular categories</string>>
+    <string name="SeeAll">See all</string>>
+    <string name="Gothic">Skull Gothic Belt</string>>
+    <string name="Frank">Frank Ocean Merch</string>>
+    <string name="Blond">Blond Tshirt</string>>
+    <string name="Nike">Nike Fashion Glases</string>>
+    <string name="found">13,539 products found in                          catergory</string>>
+    <string name="Clothes">Clothes</string>>
+    <string name="ProductName">Beats Studio Pro Headphones</string>>
+    <string name="Desc">Beats Studio Pro Wireless is a premium Bluetooth
+overhead headphones. The gadget sounds great
+and effectively suppresses noise.</string>>
+    <string name="Spec">Specifications</string>>
+    <string name="Reviews">183 reviews</string>>
+    <string name="Buy">Buy Now</string>>
+    <string name="Price">Rp757.000</string>>
+    <string name="Estimate">2-3 days</string>>11
+
+
+
+
+</resources>
